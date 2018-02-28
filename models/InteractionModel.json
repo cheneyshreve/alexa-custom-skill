@@ -1,0 +1,231 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "RECIPE_LIST",
+        "values": [
+          {
+            "id": "paella",
+            "name": {
+              "value": "paella",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "tortilla",
+            "name": {
+              "value": "tortilla",
+              "synonyms": [
+                "tortilla espanola"
+              ]
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "tortilla espanola",
+              "synonyms": [
+                "tortilla"
+              ]
+            }
+          },
+          {
+            "id": "gazpacho",
+            "name": {
+              "value": "gazpacho",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "tapas",
+            "name": {
+              "value": "tapas",
+              "synonyms": [
+                "tapa"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.NextIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.NoIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.PauseIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.PreviousIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.RepeatIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StartOverIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.YesIntent",
+        "samples": [
+          "continue",
+          "yes continue"
+        ]
+      },
+      {
+        "name": "CookIntent",
+        "samples": [
+          "start cooking",
+          "begin cooking",
+          "cooking",
+          "hear the menu",
+          "give me the menu",
+          "tell me the menu"
+        ],
+        "slots": [
+          {
+            "name": "Answer",
+            "type": "RECIPE_LIST",
+            "samples": [
+              "paella {Answer}",
+              "gazpacho {Answer}",
+              "tortilla espanola {Answer}",
+              "tapas {Answer}"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "IngredientsIntent",
+        "samples": [
+          "ingredients",
+          "shopping list"
+        ],
+        "slots": [
+          {
+            "name": "Recipe",
+            "type": "RECIPE_LIST",
+            "samples": [
+              "give me the paella {Recipe}",
+              "paella {Recipe}",
+              "I want the paella {Recipe}",
+              "get the paella {Recipe}",
+              "give me the tortilla espanola {Recipe}",
+              "the tortilla {Recipe}",
+              "tortilla {Recipe} ",
+              "gazpacho {Recipe}",
+              "the gazpacho {Recipe}",
+              "give me the gazpacho {Recipe}",
+              "I want the gazpacho {Recipe}",
+              "tapas {Recipe}",
+              "I want the tapas recipe {Recipe}",
+              "give me the tapas recipe {Recipe}"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "MoreDetailsIntent",
+        "samples": [
+          "more details",
+          "details",
+          "give me more details",
+          "get details",
+          "hear the details"
+        ],
+        "slots": []
+      },
+      {
+        "name": "SwitchIntent",
+        "samples": [
+          "switch",
+          "I want to switch",
+          "change activities",
+          "change activity",
+          "do something different",
+          "I want to do something different",
+          "I want to do something else",
+          "change my activity"
+        ],
+        "slots": []
+      }
+    ],
+    "invocationName": "taste of spain"
+  },
+  "prompts": [
+    {
+      "id": "Elicit.Intent-CookIntent.IntentSlot-Answer",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Okay, what would you like to start with, the paella, the tortilla espanola, the gazpacho, or the tapas?"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-IngredientsIntent.IntentSlot-Recipe",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "What recipes would you like to get a shopping list for, you can say paella, tortilla espanola, tapas, or gazpacho?"
+        }
+      ]
+    }
+  ],
+  "dialog": {
+    "intents": [
+      {
+        "name": "CookIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "Answer",
+            "type": "RECIPE_LIST",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicitation": "Elicit.Intent-CookIntent.IntentSlot-Answer"
+            }
+          }
+        ]
+      },
+      {
+        "name": "IngredientsIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "Recipe",
+            "type": "RECIPE_LIST",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicitation": "Elicit.Intent-IngredientsIntent.IntentSlot-Recipe"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
