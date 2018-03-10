@@ -60,25 +60,28 @@
        "gazpacho": {
       "ingredients" :
           [
-              {"name": "tomatoes", "qty": 1, "units": "cup of"},
-              {"name": "onion", "qty": 1, "units": "medium"  },
+              {"name": "tomatoes", "qty": 1, "units": "quart"},
+              {"name": "cucumbers", "qty": 1, "units": "large"},
+              {"name": "cilantro", "qty": 0.5, "units": "bunch"},
+              {"name": "onion", "qty": 0.5, "units": "medium"  },
               {"name": "olive oil", "qty": 2, "units": "tablespoons" },
-              {"name": "limes", "qty": 1, "units": "medium" }
+              {"name": "lime", "qty": 0.5, "units": "medium" },
+              {"name": "salt", "qty": 0.5, "units": "teaspoon" },
+              {"name": "pepper", "qty": 1, "units": "teaspoon" },
+              {"name": "basalmic vinegar", "qty": 1, "units": "teaspoon"}
           ],
       "steps" :
       [
-          "First step for gazpacho recipe.",
-          "Second step for gazpacho recipe.",
-          "Third step for gazpacho recipe",
-          "Fourth step for gazpacho recipe.",
+          "The ingredients you will need to collect are one quart of tomatoes, 1 onion, 1 lime, one-half a teaspoon each of salt and pepper, 1 large cucumber or 2-3 smaller persian cucumbers, 2 tablespoons of olive oil, a teaspoon of basalmic vinegar, and optionally about one-half of a bunch of fresh cilantro. The materials you will need are one large mixing bowl, 1 chef's knife, and a spoon for mixing. Wash the tomatoes, cucumber, and cilantro, and remove the skin from the onion. ",
+          "Quarter the vegetables and then dice them into evenly sized chunks. If you are using cilantro, cut off the bottom stem portion, roll the leafy portion into a bundle, and finely dice it. Slice the lime through the center.",
+          " If you are using a food processor, add the vegetables, olive oil, balsamic, salt, and pepper, then squeeze the lime on top of the mixture. Cover the container and pulse until the mixture reaches the desired consistency. Alternatively, combine all of the ingredients in a mixing bowl and stir to combine. Cover the mixing bowl or food processing container and transfer it to the refrigerator to cool.",
           "Serve."
       ],
        "details" :
       [
-         "Here is your first detailed tip for gazpacho.",
-        "Here is the second detailed tip for gazpacho",
-        "Here is the third detail for gazpacho",
-        "Here is the fourth detail for gazpacho",
+        "For a zestier taste, add more raw onion, or about a half of a clove of diced raw garlic. For a milder taste, reduce the amount of onion.",
+        "Rolling the lime on a hard surface using your palm will make it easier to juice. Don\'t have a lime? You can substitute lemon or lemon concentrate.",
+        "Gazpacho is great on its own as a side dish, or served with a crusty baguette, or crackers."
       ]
     },
      "tapas": {
