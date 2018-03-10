@@ -1,18 +1,31 @@
 # Capstone project
 
-In this project outlines a custom skill for Alexa that is intended to provide an enjoyable cooking experience for users with different skill levels. Examining the reviews of recipe skills in the Alexa store, users are often frustrated by the pace of the recipe being either too fast or too slow, being too detailed, or not detailed enough. This skill will let users pause, repeat and resume and ask for more details following each recipe step. This enables more experienced users or repeat users to go through the recipe skill faster, and less experienced users can hear more details about different cooking techniques and recipe substitutions, going at a slower pace. Users can also get a shopping list and, time permitting, I plan to modify this to reflect different serving sizes and/or recipe substitutions. Ultimately, I'd like to develop a service for food bloggers or other cooking enthusiasts where they can have their recipes made into a skill, and potentially link to new updates on their website through different features such as flash briefing skills, or by other means. I have approximately 80 hours to complete the skill and the website, so I am keeping the design simple, but it something I plan to continue enhancing moving forward.
+In this project outlines a custom skill for Alexa that is intended to provide an enjoyable cooking experience for users with different skill levels. Examining the reviews of current skills in the Alexa store, users are often frustrated by the pace of the recipe being either too fast or too slow, being too much or too little detailed, and requiring too many ingredients.
+
+Features of the skill:
+- "pause", "repeat", "next", and "previous" keywords for easy navigation
+- restart option that persists the user's progress to a database
+- connects to several list API's to GET and POST information to the user's household lists within the Alexa app
+- card rendering enables users to see text and images in onscreen devices
+- user's can ask for "more details" at the end of each instructional step, enabling them to choose a faster or slower path depending on their level of expertise
+- recipes minimize ingredients and cooking materials and offer tips for further customizing the recipe, or making substitutions
+
+The second half of this project is creating a blog for a food & travel blogger that supports the following features:
+- easy to update
+- supports Markdown language
+- links to social media throughout site
+- enables posting to social media with author's biographic information
+- email form embedded in contact page
+- supports high resolution photos and videos
+
+Solution
+- customized the "Minimal Mistakes" Jekyll theme to incorporate the required features into an
+easy-to-navigate and update website
+- website is currently under 'cheneyshreve.github.io/minimal-mistakes' git-hub pages branch while under development, and will given a custom domain name soon
+
 
 ## Pre-requisites
-- Node.js (>v6.10)
-- AWS account
-- Amazon Developer account
-- ASK CLI
+- Amazon user account
 
 ## Installation
-- to be added
-
-## AWS Deployment
-- to be added
-
-## Testing
-- to be added
+- skill is currently under review, but will be downloadable from the skill on the Alexa store soon
