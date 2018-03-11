@@ -1,7 +1,7 @@
 
 
 // define the constants for messages
-const WELCOME = 'Welcome to Taste of Spain.';
+const WELCOME = 'Welcome to a Little Taste of Spain.';
 const WELCOME_MESSAGE = 'Let\'s cook together!';
 const HELP = 'You can ask to hear the recipe ingredients, start cooking, or send me a shopping list. What would you like to do?';
 const STOP = 'Okay, see you again soon!';
@@ -135,12 +135,6 @@ const APP_ID =  'amzn1.ask.skill.00b35519-7235-47d7-8d48-4bc34d3ae792';
   var current_response;
   var list_id;
 
-// update this will relevant images
-  const welcomeCardImg = {
-      smallImageUrl: 'https://s3.amazonaws.com/webappvui/img/breakfast_sandwich_small.png',
-      largeImageUrl: 'https://s3.amazonaws.com/webappvui/img/breakfast_sandwich_large.png'
-  };
-
 // define Alexa constants
   const Alexa = require('alexa-sdk');
   const AWS = require('aws-sdk');
@@ -171,7 +165,7 @@ const APP_ID =  'amzn1.ask.skill.00b35519-7235-47d7-8d48-4bc34d3ae792';
       'LaunchRequest': function () {
           if (!this.attributes['currentStep'] ) {
               var say = WELCOME + ' ' + HELP;
-              this.response.cardRenderer(WELCOME, WELCOME_MESSAGE, welcomeCardImg);
+              this.response.cardRenderer(WELCOME, WELCOME_MESSAGE);
 
           } else {
 
@@ -321,7 +315,7 @@ const APP_ID =  'amzn1.ask.skill.00b35519-7235-47d7-8d48-4bc34d3ae792';
           if(currentStep == data[recipe].steps.length ) {
               delete this.attributes['currentStep'];
               say += '. <say-as interpret-as="interjection">bon appetit</say-as>';
-              this.response.cardRenderer("Enjoy", 'Bon Appetit!', welcomeCardImg);
+              this.response.cardRenderer("Enjoy", 'Bon Appetit!');
           } else {
               reprompt += currentStep;
               this.response.cardRenderer('Step ' + currentStep, sayOnScreen);
