@@ -577,25 +577,25 @@ function createList(session, callback) {
     let messageObject; // fill message object depending on recipe requested
      if (current_response == "tapas") {
         messageObject = {
-           name: "tapas: baguette, 4 oz. chev or brie cheese, 1 Tbsp honey or agave, 1 Tbsp olive oil, salt to taste",
+           name: "tapas: 1 baguette, 4 oz. chevre or brie cheese, 1 Tbsp honey or agave, 1 Tbsp olive oil, 0.5 c. chopped walnuts, salt to taste",
            state: 'active',
            version: 1
        }
      } else if (current_response == "paella") {
         messageObject = {
-           name: "paella: 2 c. rice, 1 qt. vegetable or chicken broth, 2 Tbsp olive oil, 15 threads saffron, 1 onion, 1 shallot, 1 red pepper, 1 Tbsp salt, pepper to taste ",
+           name: "paella: 2 c. rice, 1 qt. vegetable or chicken broth, 4 Tbsp olive oil, 15 threads saffron, 2 medium tomatoes, 0.5 pound shrimp, 1 onion, 1 shallot, salt and pepper to taste ",
            state: 'active',
            version: 1
         }
      } else if (current_response == "tortilla" || current_response == 'tortilla espanola') {
         messageObject = {
-           name: "tortilla espanola: 7 eggs, 4-6 small potatoes, 1 Tbsp salt, 1 medium onion, 1 shallot, pepper to taste",
+           name: "tortilla espanola: 6 eggs, 4 medium potatoes, 2 tsp salt, 1 onion, 1 shallot, 0.5 c. green beans, pepper to taste",
            state: 'active',
            version: 1
         }
      } else if (current_response == 'gazpacho'){
         messageObject = {
-           name: "gazpacho: 12 oz. cherry tomatoes, romas, or tomato medly, 1 Tbsp olive oil, 1 yellow onion, 1 lime",
+           name: "gazpacho: 4 medium tomatoes or 20-30 cherry tomatoes, 1 cucumber, 2 Tbsp olive oil, 1 onion, 1 lime, 1 bunch cilantro, 1 tsp basalmic vinegar, salt and pepper to taste",
            state: 'active',
            version: 1
         }
