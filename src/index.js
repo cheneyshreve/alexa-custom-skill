@@ -1,7 +1,7 @@
 
 
 // define the constants for messages
-const WELCOME = 'Welcome to a Little Taste of Spain.';
+const WELCOME = 'Welcome to Just A Little Taste of Spain.';
 const WELCOME_MESSAGE = 'Let\'s cook together!';
 const HELP = 'You can ask to hear the recipe ingredients, start cooking, or send me a shopping list. What would you like to do?';
 const STOP = 'Okay, see you again soon!';
