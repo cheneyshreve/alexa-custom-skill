@@ -155,21 +155,6 @@
         ],
         "slots": []
       },
-      {
-        "name": "SwitchIntent",
-        "samples": [
-          "switch",
-          "I want to switch",
-          "change activities",
-          "change activity",
-          "do something different",
-          "I want to do something different",
-          "I want to do something else",
-          "change my activity"
-        ],
-        "slots": []
-      }
-    ],
     "invocationName": "taste of spain"
   },
   "prompts": [
