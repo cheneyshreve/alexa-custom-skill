@@ -28,4 +28,4 @@ easy-to-navigate and update website
 - Amazon User Account and Alexa device to access the custom Alexa skill
 
 ## Installation
-- skill is currently under review, but will be downloadable from the skill on the Alexa store soon
+- skill was approved and will be downloadable from the skill on the Alexa store soon
